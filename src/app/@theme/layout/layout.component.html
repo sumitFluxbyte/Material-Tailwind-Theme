@@ -1,0 +1,9 @@
+<!-- Vertical -->
+<ng-container *ngIf="vertical">
+    <app-vertical (togglelayout)="toggle()"></app-vertical>
+</ng-container>
+<!-- horizontal -->
+<ng-container *ngIf="!vertical">
+    <app-horizontal-nav (togglelayout)="toggle()"></app-horizontal-nav>
+</ng-container>
+<!-- content -->
